@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se.lexicon.pet_clinic.dto.PetDto;
 import se.lexicon.pet_clinic.entity.Pet;
-import se.lexicon.pet_clinic.entity.String;
 import se.lexicon.pet_clinic.exception.DataNotFoundException;
 import se.lexicon.pet_clinic.repository.PetRepository;
 
