@@ -18,6 +18,6 @@ public interface PetService {
     PetDto findById (String id)throws DataNotFoundException;
     List<PetDto> findByName (String name);
     List<PetDto> findByPetTypeName (String name);
-    List<PetDto> findByOwnerFirstNameAndLastName (String fistName, String lastName);
+    List<PetDto> findByOwnerFirstNameIgnoreCaseAndLastNameIgnoreCase (String fistName, String lastName);
     List<PetDto> findByOwnerTelephone (String telephone);
 }

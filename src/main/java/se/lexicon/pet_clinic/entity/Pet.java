@@ -15,8 +15,8 @@ public class Pet {
     @GenericGenerator(
             name = "UUID",
             strategy = "org.hibernate.id.UUIDGenerator")
-    private java.lang.String id;
-    private java.lang.String name;
+    private String id;
+    private String name;
     private LocalTime birthDate;
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.REFRESH, CascadeType.DETACH})
     @JoinColumn(name = "pet_type_id")
