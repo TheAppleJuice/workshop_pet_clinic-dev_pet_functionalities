@@ -15,12 +15,12 @@ public class Pet {
     @GenericGenerator(
             name = "UUID",
             strategy = "org.hibernate.id.UUIDGenerator")
-    private String id;
-    private String name;
+    private java.lang.String id;
+    private java.lang.String name;
     private LocalTime birthDate;
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.REFRESH, CascadeType.DETACH})
     @JoinColumn(name = "pet_type_id")
-    private PetType petType;
+    private String string;
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.REFRESH, CascadeType.DETACH})
     @JoinColumn(name = "owner_id")
     private Owner owner;

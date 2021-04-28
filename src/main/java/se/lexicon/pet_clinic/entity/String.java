@@ -6,12 +6,12 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class PetType {
+public class String {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
     private int id;
     @Column(nullable = false, unique = true)
-    private String name;
+    private java.lang.String name;
 
 }
